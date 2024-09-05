@@ -1,0 +1,126 @@
+.visitorFormContainer {
+    width: 100%;
+    /* max-width: 600px; */
+    /* padding: 20px; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .head {
+    width: 100%;
+height: 107px;
+    background: #F8F9FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  .formGroup {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="time"]{
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  textarea {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    height: 150px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .error {
+    border-color: red;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 0.875em;
+  }
+  
+  button {
+    display: block;
+    width: 220px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  .suggestionList {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    list-style-type: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1000;
+    font-family: "Poppins", sans-serif;
+
+  }
+  
+  .suggestionItem {
+    padding: 8px 0;
+    cursor: pointer;
+  }
+  
+  .suggestionItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+@media (max-width:468px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="time"]{
+      width: 50%;
+    }
+    textarea{
+        width: 60%;
+    }
+    .formGroup{
+        width: 90%;
+        margin: 20px auto;
+    }
+    button{
+        width: 170px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+}
